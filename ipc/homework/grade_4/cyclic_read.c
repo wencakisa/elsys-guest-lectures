@@ -24,7 +24,7 @@ int main() {
         return -1;
     }
 
-    uint64_t pos = (mem->pos + 2048) % 4096;
+    uint64_t pos = mem->pos;
     while (true) {
         if (mem->pos == pos) {
             sleep(1);
